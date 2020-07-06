@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="rps.css" rel="stylesheet">
+    <script src="rps.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> じゃんけん</title>
+</head>
+<body>
+    <h1>グー!チョキ!パー!</h1>
+    <div id="rps-game">
+    <div id="rps-you">
+       <h2>あなたの番だよ！</h2>
+    <div id="rps-you-move"></div>
+    <select id="rps-you-sel" disabled>
+      <option value="rock">グー!</option>
+      <option vaule="paper">パー！</option>
+      <option vaule="scissors">チョキ!</option>
+    </select> 
+　　<input id="rps-you-go" type="button" value="Go!" disabled/>　　
+    </div>
+    
+    <div id="rps-com">
+      <h2>Computer’s move</h2>
+      <div id="rps-com-move"></div>
+    </div>
+　</div>
+　      <div id="rps-score">
+　　　      WIN - <span id="rps-win">0</span>
+　　　      LOSE - <span id="rps-lose">0</span>
+　　 　     DRAW - <span id="rps-draw">0</span>
+        </div>  
+      
+  </body>
+
+</html>
