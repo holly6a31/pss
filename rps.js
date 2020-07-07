@@ -46,7 +46,7 @@ switch : function (){
 
     var img = new Image();
     img.src = "game-" + rps.eSel.value + ".png";
-    rps.eYou.innerHIML = "";
+    rps.eYou.innerHTML = "";
     rps.eYou.appendChild(img);
 },
 
@@ -59,13 +59,13 @@ game : function(){
 
     var img = new Image();
     img.src = "game-" + comMove + ".png";
-    rps.eCom.innerHIML ="";
+    rps.eCom.innerHTML ="";
     rps.eCom.appendChild(img);
 
     var youMove = rps.eSel.value;
     if (youMove == comMove){
         rps.draws++;
-        rps.eDraw.innerHIML = rps.draws;
+        rps.eDraw.innerHTML = rps.draws;
         alert("DRAW");
     }else {
         var win = true;
@@ -82,11 +82,11 @@ game : function(){
         }
     if (win){
         rps.wins++;
-        rps.eWin.innerHIML = rps.wins;
+        rps.eWin.innerHTML = rps.wins;
         alert("YOU WIN!");
     }else {
         rps.loses++;
-        rps.eLose.innerHIML = rps.loses;
+        rps.eLose.innerHTML = rps.loses;
         alert("YOU LOSE");
       }
     }
